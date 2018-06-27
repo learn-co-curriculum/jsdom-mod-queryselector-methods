@@ -139,9 +139,7 @@ Given a document like
 </main>
 ```
 
-If we called `document.getElementById('app').querySelectorAll('ul.ranked-list
-li')`, we'd get back a list of Nodes corresponding to: `<li>1</li>, <li>2</li>, <li>10</li>,
-<li>11</li>`.
+If we called `document.getElementById('app').querySelectorAll('ul.ranked-list li')`, we'd get back a list of Nodes corresponding to: `<li>1</li>, <li>2</li>, <li>10</li>, <li>11</li>`.
 
 We've been working with JavaScript several lessons, let's try using it to
 update our page. An important fact is that the HTML inside of a selected node
@@ -177,11 +175,8 @@ testing against this document, but you should still write your code in
 docs](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_Started/Selectors),
 right? :) ). (Note that in `index.html` `#nested` and `.target` just _happen_
 to be `div`s. This method should work with arbitrary elements.)
-- Define a function `increaseRankBy(n)` that increases the ranks in all of the
-  `.ranked-list`s by `n`. (You might need to make use of
-[`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
-- Define a function `deepestChild()` that pulls out the most deeply nested
-  child
+- Define a function `increaseRankBy(n)` that increases the ranks in all of the `.ranked-list`s by `n`. (You might need to make use of [`parseInt()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt)
+- Define a function `deepestChild()` that pulls out the most deeply nested child
 from `div#grand-node`. (Remember, you can iterate over elements and call
 `querySelector()` and `querySelectorAll()` on them. This is challenging to
 implement correctly, but not beyond your ability!)
